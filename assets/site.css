@@ -1,0 +1,75 @@
+:root {
+  /* Brand colours from the original page: dark green message, maroon closing line. */
+  --green-dark: #003300;
+  --maroon: #7b141d;
+  --card: rgba(255, 255, 255, 0.88);
+  --rule: rgba(0, 51, 0, 0.18);
+  --body: 'Open Sans', 'Segoe UI', Helvetica, Arial, sans-serif;
+}
+
+* { box-sizing: border-box; }
+
+html, body { height: 100%; margin: 0; }
+
+body {
+  /* Reproduces the original page's full-bleed fixed cover photograph. */
+  background: #ffffff url('farm.jpg') no-repeat center top fixed;
+  background-size: cover;
+  font-family: var(--body);
+  color: var(--green-dark);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 1.25rem;
+  text-align: center;
+}
+
+/* The text sits on its own light ground rather than directly on the photograph. The
+   original relied on the crop landing over a pale greenhouse; at other window sizes the
+   same text falls over bright leaves and disappears, whether it is set light or dark.
+   A card fixes contrast at every crop and keeps the brand colours legible. */
+.panel {
+  max-width: 640px;
+  background: var(--card);
+  border-radius: 10px;
+  padding: 2.5rem 2.25rem 2rem;
+  box-shadow: 0 12px 34px rgba(0, 0, 0, 0.22);
+}
+
+.logo {
+  width: 280px;
+  max-width: 88%;
+  height: auto;
+  margin: 0 auto 1.5rem;
+  display: block;
+}
+
+.message, .closing {
+  margin: 0 0 0.9rem;
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+.message {
+  color: var(--green-dark);
+  font-size: clamp(1.15rem, 3.2vw, 1.6rem);
+}
+
+.closing {
+  color: var(--maroon);
+  font-size: clamp(1.05rem, 2.8vw, 1.35rem);
+  margin-bottom: 0;
+}
+
+.panel hr {
+  border: 0;
+  border-top: 1px solid var(--rule);
+  max-width: 70%;
+  margin: 1.75rem auto 0;
+}
+
+a { color: var(--green-dark); }
+
+@media (max-width: 480px) {
+  .panel { padding: 1.75rem 1.25rem 1.5rem; }
+}
