@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" role="img" aria-label="Power Greens Club">
+  <!-- A single leaf, drawn rather than derived from the logo: the logo is a script wordmark
+       and turns to mush below about 64px. Greens taken from the logo's leaf cluster, with
+       the wordmark's #003300 for the midrib. -->
+  <title>Power Greens Club</title>
+  <defs>
+    <linearGradient id="leaf" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#7cb342"/>
+      <stop offset="1" stop-color="#33691e"/>
+    </linearGradient>
+  </defs>
+  <path d="M16 2c8.5 5.5 11 16 0 28C5 18 7.5 7.5 16 2z" fill="url(#leaf)"/>
+  <path d="M16 5.5v22" stroke="#003300" stroke-width="1.6" stroke-linecap="round" fill="none" opacity="0.85"/>
+  <path d="M16 12l5-3M16 18l6-3.5M16 12l-5-3M16 18l-6-3.5" stroke="#003300" stroke-width="1.1"
+        stroke-linecap="round" fill="none" opacity="0.55"/>
+</svg>
